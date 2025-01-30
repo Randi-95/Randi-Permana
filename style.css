@@ -687,6 +687,9 @@ footer .container-footer .footer-copyright p{
         flex-direction: column;
         gap: 100px;
     }
+    .tech-demo{
+        flex-direction: column;
+    }
 } 
 
 
