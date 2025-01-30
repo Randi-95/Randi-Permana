@@ -1,0 +1,692 @@
+:root {
+    --utama: #09fca1;
+    --kedua: #d9d9d9;
+    --ketiga: #1c1b22;
+  }
+
+*, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: "Poppins", serif;
+    background-color: var(--ketiga);
+}
+header .navbar {
+    display: flex;
+    justify-content: space-between ;
+    padding: 20px 60px  20px 60px;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    transition: all 0.5s ;
+    z-index: 9999;
+}
+.navbar.scrolling-active{
+    background-color: rgba(255, 251, 251, 0);
+    backdrop-filter: blur(5px);
+}
+.navbar .nav-judul h2 span{
+    color: var(--utama);
+}
+.navbar .nav-judul h2{
+    color: var(--kedua);
+}
+.hamburger{
+    background-color: rgba(255, 251, 251, 0);
+}
+.nav-isi{
+    display: flex;
+    align-items: center;
+    transition: all 1s;
+}
+.nav-isi button{
+    border: none;
+    background-color: transparent;
+}
+.nav-isi button i{
+    font-size: 20px;
+    color: white;
+    display: none;
+}
+.nav-isi ul{
+    display: flex;
+    gap: 40px;
+}
+.nav-isi li{
+    list-style: none;
+}
+.nav-isi ul, li, a{
+    text-decoration: none;
+    color: var(--kedua);
+    font-size: 12px;
+    font-weight: 600;
+    transition: all 0.5s ;
+}
+.nav-isi ul, li, a:hover {
+    color: var(--utama);
+}
+.navbar .button button{
+    background-color: transparent;
+    border: 1.5px solid var(--utama);
+    padding: 6px;
+    border-radius: 5px;
+    color: var(--utama);
+}
+.navbar .button button p{
+    font-size: 12px;
+}
+.navbar .button{
+    display: flex;
+    align-items: center;
+}
+.hero .isi-hero{
+    display: flex;
+    padding-inline: 60px;
+    align-items: center;
+}
+.hero .container .isi-hero .box:nth-child(1) h1{
+    font-size: 40px;
+    width: 72%;
+    line-height: 50px;
+    color: var(--kedua);
+}
+.hero .container .isi-hero .box:nth-child(2) img{
+    width: 40rem;
+}
+.hero .container .isi-hero .box:nth-child(1) h1 span{
+    color: var(--utama);
+}
+.hero .container .isi-hero .box:nth-child(1) p{
+    font-size: 0.8rem;
+    width: 70%;
+    color: var(--kedua);
+}
+.hero .container .isi-hero .box:nth-child(1) a button{
+    background-color: transparent;
+    border: 1.5px solid var(--utama);
+    border-radius: 5px;
+    padding: 8px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--utama);
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+.hero .container .isi-hero .box:nth-child(1) button:hover{
+    background-color: var(--utama);
+    color: var(--ketiga);
+}
+.hero .container .isi-hero .box:nth-child(1) button:hover i{
+    color: var(--ketiga);
+}
+.hero .container .isi-hero .box:nth-child(1) a button i{
+   margin-right: 4px;
+   color: var(--utama);
+   transition: all 0.5s ease-in-out;
+}
+.hero .container .isi-hero .box:nth-child(1) .button2 button{
+    background-color: var(--utama);
+    border: 1.5px solid var(--utama);
+    color: var(--ketiga);
+    transition: all 0.5s ease-in-out;
+}
+.hero .container .isi-hero .box:nth-child(1) .button2 button:hover{
+    background-color: transparent;
+    color: var(--utama);
+}
+.hero .container .isi-hero .box:nth-child(1) .button2 button:hover i{
+    color: var(--utama);
+}
+.hero .container .isi-hero .box:nth-child(1) .button2 button i{
+    color: var(--ketiga);
+}
+.hero .container .isi-hero .box:nth-child(1) .container-button{
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .hamburger {
+    display: none;
+}
+.navbar .hamburger i{
+    color: var(--kedua);
+}
+.nav-isi.active {
+    right: 0;
+}
+
+.about{
+
+    height: 100vh;
+    padding-inline: 60px;
+}
+.about .container{
+    padding-top: 120px;
+}
+.about .container .isi-about{
+    display: flex;
+   
+}
+.isi-about .isi h1{
+    font-weight: 600;
+    color: var(--kedua);
+}
+.isi-about .isi h1 span{
+    color: var(--utama);
+}
+.isi-about .isi p{
+    width: 100%;
+    font-weight: 400;
+    font-size: 13px;
+    color: var(--kedua);
+}
+.about .isi-about .isi:nth-child(1) .button-hero{
+    display: flex;
+    margin-top: 20px;
+    gap: 20px;
+}
+.about .isi-about .isi:nth-child(1) .button-hero button{
+    background-color: transparent;
+    border: 1.5px solid var(--utama);
+    border-radius: 15px;
+    padding: 15px;
+    margin-top: 10px;
+    font-weight: 600;
+    color: var(--utama);
+    transition: all 0.5s ease-in-out;
+}
+.about .isi-about .isi:nth-child(1) .button-hero button:hover{
+    background-color: var(--utama);
+    color: var(--ketiga);
+}
+.about .isi-about .isi:nth-child(1) .button-hero button:hover i{
+    color: var(--ketiga);
+}
+.about .isi-about .isi:nth-child(1) .button-hero button i{
+    transition: all 0.5s ease-in-out;
+}
+.about .isi-about .isi:nth-child(1) .button-hero .button button{
+    background-color: var(--utama);
+    border: none;
+    padding: 16px;
+    color: var(--ketiga);
+    border: 1.5px solid var(--utama);
+}
+.about .isi-about .isi:nth-child(1) .button-hero .button button:hover {
+    background-color: transparent;
+    color: var(--utama);
+}
+.about .isi-about .isi:nth-child(1) .button-hero .button button:hover i{
+    color: var(--utama);
+}
+.about .isi-about .isi:nth-child(1) .button-hero .button button i{
+    transition: all 0.5s ease-in-out;
+}
+.about .isi-about .isi:nth-child(1) .portofolio-about .project .isi-project h2{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    color: var(--kedua);
+}
+.about .isi-about .isi:nth-child(1) .portofolio-about .project .isi-project h3{
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    color: var(--utama);
+}
+.about .isi-about .isi:nth-child(1) .portofolio-about .project .isi-project p{
+    font-size: 10px;
+    font-weight: 300;
+    width: 100%;
+    text-align: center;
+}
+.about .isi-about .isi:nth-child(1) .portofolio-about{
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+}
+.about .isi-about .isi:nth-child(1) .portofolio-about .isi-container{
+    display: flex;
+}
+.about .isi-about .isi:nth-child(1) .portofolio-about .project{
+    width: 150px;
+}
+.about .isi-about .isi:nth-child(2) .card-techstack i{
+    width: auto;
+    font-size: 50px;
+    height: 10vh;
+    margin-bottom: 20px;
+    color: var(--utama);
+}
+.about .isi-about .isi:nth-child(2) .card-techstack h2{
+    display: flex;
+    justify-content: center;
+    font-size: 16px;
+    color: var(--utama);
+    padding-bottom: 20px;
+}
+.about .isi-about .isi:nth-child(2) .card-techstack{
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    width: 20vw;
+    height: fit-content;
+    transition: all 0.3s ease-in-out;
+}
+.about .isi-about .isi:nth-child(2) .card-techstack .img-card{
+    display: flex;
+    justify-content: center;
+}
+.about .isi-about .isi:nth-child(2) .container-tectstack{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);  
+    gap: 20px; 
+    row-gap: 60px;
+    margin-top: 20px;
+}
+
+
+.portofolio {
+    height: 100%;
+    padding-top: 100px;
+    padding-inline: 60px;
+}
+.portofolio .button-portofolio{
+    display: flex;
+    border-radius: 20px;
+    border: 1px solid var(--utama);
+    width: 100%;
+    max-width: 600px;
+    margin-inline: auto;
+    padding: 10px;
+    gap: 10px;
+}
+.card-tech img{
+    width: 100%;
+    width: 20px;
+    height: 20px;
+}
+.card-tech{
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+.live-demo button{
+    border: none;
+    width: 100px;
+    height: 30px;
+    background-color: var(--utama);
+    border-radius: 3px;
+    cursor: pointer;
+}
+.live-demo button p{
+    font-weight: 600;
+    color: var(--ketiga);
+}
+.live-demo{
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+}
+.tech-demo{
+    display: flex;
+    justify-content: space-between;
+}
+.portofolio .button-portofolio button{
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+}
+.project-button{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 18px;
+    transition: all 0.8s;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px;
+}
+.project-button p{
+    color: var(--kedua);
+}
+.project-button:hover{
+    background-color: var(--utama);
+}
+.project-button i{
+    display: flex;
+    justify-content: center;
+    color: var(--kedua);
+}
+.sertifikat-button{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 18px;
+    transition: all 0.8s;
+    cursor: pointer;
+    width: 100%;
+    max-width: 600px;
+}
+.sertifikat-button p{
+    color: var(--kedua);
+}
+.sertifikat-button:hover{
+    background-color: var(--utama);
+}
+.sertifikat-button i{
+    display: flex;
+    justify-content: center;
+    color: var(--kedua);
+}
+hr{
+    margin-top: 20px;
+    border: 1.2px solid var(--utama);
+}
+.card-portofolio{
+    width: 100%;
+    height: 100%;
+}
+.card-portofolio .container-card {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   gap: 20px;
+   justify-content: center;
+   margin-top: 20px;
+}
+.card-portofolio .container-card .card{
+    background-color: var(--ketiga);
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 2px;
+    box-shadow: 0 4px 10px -5px var(--utama), 0 8px 10px -6px var(--ketiga);
+    overflow: hidden;
+    border: 0.2px solid var(--utama);
+}
+.card-portofolio .container-card .card .card-img img{
+    width: 100%;
+    border-radius: 5px;
+    transition: all 0.5s ease;
+}
+.card-portofolio .container-card .card .card-img img:hover{
+    transform: scale(1.08 );
+}
+.card-portofolio .container-card .card .container-img{
+    overflow: hidden;
+}
+.card-portofolio .container-card .card .card-caption h2 {
+    font-size: 15px;
+    color: var(--kedua);
+}
+.card-portofolio .container-card .card .card-caption h2 span{
+    color: var(--utama);
+}
+.card-portofolio .container-card .card .card-caption p {
+    font-size: 10px;
+    color: var(--kedua);
+}
+.card-portofolio.sertif{
+    display: none;
+}
+
+footer .container-footer {
+    background-color: var(--utama);
+    border-radius: 5px;
+    padding: 20px 60px;
+    z-index: 0;
+}
+footer{
+    padding: 20px;
+    position: relative;
+}
+footer .container-footer .footer-content{
+    display: flex;
+    flex-direction: column;
+}
+footer .container-footer .footer-content .footer-isi{
+    display: flex;
+    justify-content: space-between;
+}
+footer .container-footer .footer-judul h2{
+    color: var(--ketiga);
+}
+footer .container-footer .footer-judul p{
+    color: var(--ketiga);
+    width: 100%;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 18px;
+}
+footer .container-footer .footer-judul{
+    width: 20%;
+}
+footer .container-footer .footer-judul .lokasi{
+    margin-top: 40px;
+}
+footer .container-footer .footer-judul .lokasi p{
+    color: var(--ketiga);
+    font-weight: 600;
+    display: flex;
+    gap: 5px;
+}
+footer .container-footer .footer-judul .lokasi p{
+    display: flex;
+    align-items: center;
+} 
+footer .container-footer .footer-nav ul li a{
+    color: var(--ketiga);
+} 
+footer .container-footer .footer-nav ul li a:hover{
+    color: var(--kedua);
+}
+footer .container-footer .footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+footer .container-footer .footer-media{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+footer .container-footer .footer-media p{
+    display: flex;
+    color: var(--ketiga);
+    font-weight: 600;
+    gap: 6px;
+    font-size: 15px;
+    align-items: center;
+}
+footer .container-footer .footer-media i {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+}
+footer .container-footer .footer-copyright p{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 	1024px){
+    .navbar .hamburger {
+        display: block;
+    }
+    .navbar .hamburger i{
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .navbar button{
+        border: none;
+    }
+    .navbar .button button{
+       display: none;
+    }
+    .nav-isi {
+        position: absolute;
+        top: 0;
+        right: -200%;
+        width: 60vw;
+        height: 100vh;
+        background-color: var(--ketiga);
+        padding: 20px;
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        border-left: 0.8px solid var(--utama);
+    }
+    .nav-isi ul li a{
+        color: var(--utama);
+        font-weight: 700;
+    }
+    .nav-isi ul li{
+        background-color: transparent;
+        border-radius: 10px;
+        width: 90vw;
+        padding-inline: 100px;
+        padding: 10px;
+        transition: all 0.5s;
+    }
+
+    .nav-isi ul{
+        position: absolute;
+        top: 100px;
+    }
+    .nav-isi ul{
+        flex-direction: column;
+    }
+    .navbar.scrolling-active{
+        background-color: rgba(255, 251, 251, 0);
+        backdrop-filter: blur(5px);
+    }
+    
+    .hero .isi-hero{
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .hero .container .isi-hero .box:nth-child(2) img{
+        width: 20rem;
+    }
+    .nav-isi button i{
+        display: block;
+        color: var(--utama);
+        font-weight: 900;
+        cursor: pointer;
+    }
+    .nav-isi button{
+        position: absolute;
+        top: 40px;
+    }
+    .about .container .isi-about {
+        flex-direction: column;
+    }
+    .about .isi-about .isi:nth-child(2) .container-tectstack {
+        display: flex;
+        margin-top: 100px;
+        justify-content: center;
+    }
+    .about .isi-about .isi:nth-child(1) .portofolio-about .isi-container{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .about .isi-about .isi:nth-child(1) .portwofolio-about{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .about .isi-about .isi:nth-child(1) .portofolio-about .project{
+        width: 100%;
+    }
+    .about .isi-about .isi:nth-child(2) .container-tectstack{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about .isi-about .isi:nth-child(2) .container-tectstack .card-techstack{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .about{
+        height: 100%;
+    }
+    .portofolio .button-portofolio{
+        gap: 0px;
+        padding: 0;
+    }
+    .card-portofolio .container-card {
+        flex-direction: column;
+        display: flex;
+        gap: 20px;
+    }
+    .card-portofolio .container-card .card{
+        width: 100%;
+        max-width: 600px;
+        margin-inline: auto;
+    }
+    .project-button button p {
+        font-size: 10px;
+    }
+    .sertifikat-button button p {
+        font-size: 10px;
+    }
+    footer{
+        margin-top: 140px;
+    }
+    .live-demo{
+        display: flex;
+        align-items: center;
+    }
+    header .navbar {
+        padding: 20px 25px  20px 25px;
+    }
+    .hero .isi-hero{
+        padding-inline: 30px;
+    }
+    .about{
+        padding-inline: 30px;
+    }
+    footer .container-footer {
+        padding: 20px;
+    }
+    footer .container-footer .footer-content .footer-isi{
+        flex-direction: column;
+        gap: 100px;
+    }
+} 
+
+
