@@ -87,6 +87,13 @@ header .navbar {
     display: flex;
     padding-inline: 60px;
     align-items: center;
+    height: 100vh;
+}
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 .hero .container .isi-hero .box:nth-child(1) h1{
     font-size: 40px;
@@ -95,7 +102,7 @@ header .navbar {
     color: var(--kedua);
 }
 .hero .container .isi-hero .box:nth-child(2) img{
-    width: 40rem;
+    width: 30rem;
 }
 .hero .container .isi-hero .box:nth-child(1) h1 span{
     color: var(--utama);
