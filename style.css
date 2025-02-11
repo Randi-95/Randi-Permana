@@ -62,7 +62,7 @@ header .navbar {
 .nav-isi ul, li, a{
     text-decoration: none;
     color: var(--kedua);
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
     transition: all 0.5s ;
 }
@@ -91,7 +91,6 @@ header .navbar {
 }
 .hero{
     display: flex;
-    justify-content: center;
     align-items: center;
     height: 100vh;
 }
@@ -602,10 +601,13 @@ footer .container-footer .footer-copyright p{
         background-color: rgba(255, 251, 251, 0);
         backdrop-filter: blur(5px);
     }
-    
     .hero .isi-hero{
         flex-direction: column;
         margin-top: 100px;
+        height: auto;
+    }
+    .hero{
+        height: auto;
     }
     .hero .container .isi-hero .box:nth-child(2) img{
         width: 20rem;
@@ -700,5 +702,10 @@ footer .container-footer .footer-copyright p{
         flex-direction: column;
     }
 } 
-
+@media (max-width: 408px) {
+    .hero .container .isi-hero .box:nth-child(1) h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+}
 
