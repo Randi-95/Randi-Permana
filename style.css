@@ -702,10 +702,3 @@ footer .container-footer .footer-copyright p{
         flex-direction: column;
     }
 } 
-@media (max-width: 408px) {
-    .hero .container .isi-hero .box:nth-child(1) h1{
-        font-size: 25px;
-        line-height: 30px;
-    }
-}
-
