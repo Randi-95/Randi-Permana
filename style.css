@@ -103,6 +103,8 @@ header .navbar {
 }
 .hero .container .isi-hero .box:nth-child(2) img{
     width: 30rem;
+    display: flex;
+    align-items: center;
 }
 .hero .container .isi-hero .box:nth-child(1) h1 span{
     color: var(--utama);
